@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Raynold Odhiambo Onyango | Research and Project Management</title>
+<meta name="description" content="Portfolio of Raynold Odhiambo Onyango, a research and project management professional in Nairobi, Kenya, with experience in data analysis, report writing and AI model evaluation.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%F0%9F%8C%BE%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#f5f8f2; --surface:#ffffff; --ink:#1b2a21; --muted:#55645b; --line:#d3ddd0;
+  --accent:#2d6a4a; --accent-ink:#ffffff; --soft:#e4eddf; --mark:#f0d58a;
+  --display:"Bricolage Grotesque","Segoe UI",system-ui,sans-serif;
+  --body:"Source Serif 4",Georgia,"Times New Roman",serif;
+}
+@media (prefers-color-scheme:dark){
+  :root{--bg:#0f1a14;--surface:#16231b;--ink:#e7efe4;--muted:#a3b3a8;--line:#2a3b30;--accent:#7fcf9f;--accent-ink:#0f1a14;--soft:#1b2c21;--mark:#6b5a22}
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:72px}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 1.125rem/1.65 var(--body)}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--accent);outline-offset:3px;border-radius:4px}
+.wrap{width:min(1040px,100% - 2.5rem);margin-inline:auto}
+h1,h2,h3{font-family:var(--display);line-height:1.1;margin:0}
+h2{font-size:clamp(1.8rem,4vw,2.4rem);font-weight:700;letter-spacing:-.01em}
+p{margin:0 0 1rem}
+
+/* header */
+.top{position:sticky;top:0;z-index:5;background:color-mix(in srgb,var(--bg) 92%,transparent);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+.top .wrap{display:flex;align-items:center;justify-content:space-between;gap:1rem;min-height:60px}
+.brand{font:700 1.05rem var(--display);text-decoration:none}
+nav{display:flex;gap:1.4rem;overflow-x:auto;font:500 .95rem var(--display)}
+nav a{text-decoration:none;color:var(--muted);white-space:nowrap;padding:.3rem 0}
+nav a:hover{color:var(--ink);text-decoration:underline;text-underline-offset:6px}
+
+/* hero */
+.hero{padding:clamp(3rem,8vw,6rem) 0 clamp(2.5rem,6vw,4rem)}
+.hero .wrap{display:grid;grid-template-columns:1fr auto;gap:3rem;align-items:center}
+.hero h1{font-size:clamp(2.8rem,8.5vw,6rem);font-weight:800;letter-spacing:-.035em;line-height:.98}
+.role{font:500 clamp(1.2rem,2.6vw,1.6rem) var(--display);color:var(--accent);margin:1.2rem 0 1rem}
+.lead{max-width:34rem;color:var(--muted)}
+.mark{background:linear-gradient(transparent 62%,var(--mark) 62%);padding:0 .1em}
+.btns{display:flex;flex-wrap:wrap;gap:.75rem;margin-top:1.8rem}
+.btn{display:inline-block;font:600 1rem var(--display);text-decoration:none;padding:.8rem 1.4rem;border-radius:999px;border:2px solid var(--accent)}
+.btn.primary{background:var(--accent);color:var(--accent-ink)}
+.btn.ghost{color:var(--accent)}
+.btn:hover{filter:brightness(1.08)}
+.portrait{position:relative;width:min(290px,70vw);aspect-ratio:4/5;border-radius:999px 999px 28px 28px;background:var(--soft);overflow:hidden;display:grid;place-items:center;border:1px solid var(--line)}
+.portrait img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.portrait span{font:800 4.5rem var(--display);color:var(--accent)}
+
+/* sections */
+section{padding:clamp(2.5rem,6vw,4.2rem) 0;border-top:1px solid var(--line)}
+.row{display:grid;grid-template-columns:200px 1fr;gap:2rem}
+.row>h2{align-self:start}
+.facts{display:flex;flex-wrap:wrap;gap:1rem 2.5rem;margin:1.5rem 0 0;padding:0;list-style:none;font-family:var(--display)}
+.facts strong{display:block;font-size:1.5rem}
+.facts span{color:var(--muted);font-size:.95rem}
+
+.skill{padding:1rem 0;border-bottom:1px solid var(--line)}
+.skill:first-child{padding-top:0}
+.skill h3{font-size:1.15rem;font-weight:700;margin-bottom:.25rem}
+.skill p{margin:0;color:var(--muted)}
+.tools{display:flex;flex-wrap:wrap;gap:.5rem;margin:1.2rem 0 0;padding:0;list-style:none}
+.tools li{font:500 .9rem var(--display);background:var(--soft);padding:.3rem .8rem;border-radius:999px}
+
+.job{position:relative;padding:0 0 2rem 1.6rem;border-left:2px solid var(--line)}
+.job:last-child{padding-bottom:0}
+.job::before{content:"";position:absolute;left:-7px;top:.55rem;width:12px;height:12px;border-radius:50%;background:var(--accent)}
+.job header{display:flex;flex-wrap:wrap;justify-content:space-between;gap:.2rem 1rem}
+.job h3{font-size:1.3rem;font-weight:700}
+.when{font:500 .95rem var(--display);color:var(--muted)}
+.org{color:var(--accent);font-weight:600;margin:.1rem 0 .6rem}
+.job ul{margin:0;padding-left:1.1rem}
+.job li{margin-bottom:.3rem}
+
+.edu{padding:0 0 1.1rem}
+.edu h3{font-size:1.15rem;font-weight:700}
+.edu p{margin:0;color:var(--muted)}
+.sub{font:700 1.15rem var(--display);margin:1.8rem 0 1rem;color:var(--accent)}
+.sub:first-child{margin-top:0}
+
+.contact a.big{font:700 clamp(1.4rem,4vw,2.2rem) var(--display);text-decoration-thickness:3px;text-underline-offset:7px;text-decoration-color:var(--accent);word-break:break-all}
+.contact ul{list-style:none;margin:1.4rem 0 0;padding:0;display:grid;gap:.4rem}
+footer{padding:2rem 0;border-top:1px solid var(--line);color:var(--muted);font-size:.95rem}
+
+@media (max-width:760px){
+  .hero .wrap{grid-template-columns:1fr}
+  .portrait{order:-1;width:min(220px,60vw)}
+  .row{grid-template-columns:1fr;gap:1.2rem}
+  nav{gap:1rem}
+}
+</style>
+</head>
+<body>
+
+<header class="top">
+  <div class="wrap">
+    <a class="brand" href="#top">Raynold Onyango</a>
+    <nav aria-label="Main">
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#experience">Experience</a>
+      <a href="#education">Education</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+  <div class="hero">
+    <div class="wrap">
+      <div>
+        <h1>Raynold Odhiambo Onyango</h1>
+        <p class="role">Research and project management professional</p>
+        <p class="lead">I turn complex information into <span class="mark">clear, evidence-based reports</span> and help projects stay on time and within budget. Based in Nairobi, Kenya.</p>
+        <div class="btns">
+          <a class="btn primary" href="Raynold_Odhiambo_Onyango_CV.pdf" download>Download my CV</a>
+          <a class="btn ghost" href="#contact">Get in touch</a>
+        </div>
+      </div>
+      <div class="portrait">
+        <img src="profile.jpg" alt="Portrait of Raynold Odhiambo Onyango" width="290" height="362" onerror="this.remove()">
+        <span aria-hidden="true">RO</span>
+      </div>
+    </div>
+  </div>
+
+  <section id="about">
+    <div class="wrap row">
+      <h2>About me</h2>
+      <div>
+        <p>I hold an MSc in Project Management from JKUAT and a BSc in Agricultural Economics from Egerton University. My background combines economics, research and project delivery, so I can plan the work, analyse the evidence and explain what it means.</p>
+        <p>I am strongest in research and report writing, and I enjoy helping teams stay motivated and committed to shared goals. I also train and evaluate AI models, and I am adaptable, reliable and focused on accurate work delivered on time.</p>
+        <ul class="facts">
+          <li><strong>7+ years</strong><span>in research and analysis</span></li>
+          <li><strong>MSc</strong><span>Project Management</span></li>
+          <li><strong>2 degrees</strong><span>plus 2 professional certificates</span></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section id="skills">
+    <div class="wrap row">
+      <h2>Skills</h2>
+      <div>
+        <div class="skill"><h3>Research and data analysis</h3><p>General research, literature review, critical analysis, data literacy and analytics.</p></div>
+        <div class="skill"><h3>Report writing and presentation</h3><p>Research reports, business reports and professional presentations.</p></div>
+        <div class="skill"><h3>Project management</h3><p>Planning, scheduling, budgeting, progress tracking, risk management and program coordination.</p></div>
+        <div class="skill"><h3>Impact evaluation</h3><p>Evaluation design, outcome measurement and evidence-based insights for policy, project and program decisions.</p></div>
+        <div class="skill"><h3>AI and digital fluency</h3><p>Generating and evaluating AI responses, and using AI tools to support research and writing.</p></div>
+        <div class="skill"><h3>People and personal skills</h3><p>Emotional intelligence, adaptability, flexibility, time management, problem solving and financial literacy.</p></div>
+        <ul class="tools" aria-label="Tools">
+          <li>SPSS</li><li>Excel</li><li>Word</li><li>Access</li><li>PowerPoint</li><li>Outlook</li>
+          <li>MS Project</li><li>ProjectLibre</li><li>ClickUp</li><li>Google Calendar</li>
+          <li>ChatGPT</li><li>Claude</li><li>Gemini</li><li>Copilot</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section id="experience">
+    <div class="wrap row">
+      <h2>Experience</h2>
+      <div>
+        <article class="job">
+          <header><h3>AI Trainer</h3><span class="when">2024 to 2026</span></header>
+          <p class="org">Handshake and Prolific (Remote)</p>
+          <ul>
+            <li>Generated AI responses and evaluated them for accuracy, relevance and quality against project guidelines.</li>
+            <li>Humanised AI-generated text to give it a natural, human tone.</li>
+            <li>Delivered accurate work on time in a remote setting, using ChatGPT, Claude, Gemini and Copilot.</li>
+          </ul>
+        </article>
+        <article class="job">
+          <header><h3>Administration and Sales Volunteer</h3><span class="when">Sep to Dec 2024</span></header>
+          <p class="org">Kenya Farmers Association (KFA), Nakuru</p>
+          <ul>
+            <li>Handled calls from farmers and the public and answered general inquiries.</li>
+            <li>Evaluated branch sales reports to support the sales department.</li>
+            <li>Filed and stocked branch reports to keep administrative records organised.</li>
+          </ul>
+        </article>
+        <article class="job">
+          <header><h3>Executive Assistant (Part-time)</h3><span class="when">2022 to 2024</span></header>
+          <p class="org">Danel Holdings Ltd, building and civil engineering</p>
+          <ul>
+            <li>Worked with the project manager to plan projects from start to finish.</li>
+            <li>Scheduled activities, prepared budgets and tracked progress against targets.</li>
+            <li>Highlighted potential delays, reviewed risks and proposed contingency measures.</li>
+          </ul>
+        </article>
+        <article class="job">
+          <header><h3>Research Assistant</h3><span class="when">2019 to 2024</span></header>
+          <p class="org">WriteZillas, Writera Ltd and Academia (Remote)</p>
+          <ul>
+            <li>Carried out research, literature reviews and critical analysis across a wide range of topics.</li>
+            <li>Analysed data with SPSS and Excel, wrote research reports and prepared presentations.</li>
+          </ul>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section id="education">
+    <div class="wrap row">
+      <h2>Education and certificates</h2>
+      <div>
+        <h3 class="sub">Education</h3>
+        <div class="edu"><h3>MSc in Project Management</h3><p>Jomo Kenyatta University of Agriculture and Technology (JKUAT), 2021 to 2026</p></div>
+        <div class="edu"><h3>BSc in Agricultural Economics</h3><p>Egerton University, 2014 to 2018</p></div>
+        <div class="edu"><h3>KCSE, mean grade A- (74 points)</h3><p>Kanyawanga High School, 2010 to 2013</p></div>
+        <div class="edu"><h3>KCPE, 333 marks</h3><p>Kakwara Primary School, 2002 to 2009</p></div>
+        <h3 class="sub">Certificates</h3>
+        <div class="edu"><h3>Impact Evaluation Methods for Policy, Project, and Program</h3><p>African Population and Health Research Center (APHRC), April 2026</p></div>
+        <div class="edu"><h3>Certificate in Computer Packages</h3><p>Sensei Institute of Technology (SIT), 2015</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="contact">
+    <div class="wrap row">
+      <h2>Contact</h2>
+      <div>
+        <p>I am open to research, project management and AI evaluation opportunities. Send me a message and I will reply.</p>
+        <a class="big" href="mailto:onyangoray@gmail.com">onyangoray@gmail.com</a>
+        <ul>
+          <li>Phone: <a href="tel:+254728751231">+254 728 751 231</a></li>
+          <li>Location: Nairobi, Kenya</li>
+          <li>CV: <a href="Raynold_Odhiambo_Onyango_CV.pdf" download>Download as PDF</a></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">&copy; <span id="yr">2026</span> Raynold Odhiambo Onyango</div>
+</footer>
+<script>document.getElementById("yr").textContent=new Date().getFullYear();</script>
+</body>
+</html>
